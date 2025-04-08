@@ -8,11 +8,7 @@ module binary(
 
     wire [2:0] State;
     wire [2:0] Next;
-    /*
-    assign st[0] = State[0];
-    assign st[1] = State[1];
-    assign st[2] = State[2];
-*/
+    
     dff zero(
         .D(Next[0]),
         .Default(1'b0),
